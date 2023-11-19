@@ -38,7 +38,7 @@ function App() {
   }
 
 function calcularQt() {
-  setCargaTt(prevCargaTt => prevCargaTt = (Number(qData.A) * Number(qData.U) * Number(qData.T)))  s
+  setCargaTt(prevCargaTt => prevCargaTt = (Number(qData.A) * Number(qData.U) * Number(qData.T)))
 }
 
 function calcularQv() {
