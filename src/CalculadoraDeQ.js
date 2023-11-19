@@ -20,8 +20,7 @@ const sub = {
   };
 
   const Qt = {
-    display: "flex",
-    
+    display: "flex",  
     alignItems: "baseline",
     gap: "10px",
   }

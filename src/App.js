@@ -23,10 +23,8 @@ function App() {
 
   const [unidades, setUnidades] = React.useState(true)
 
-  const [qt, setQt] = React.useState("")
-
   function handleChange(event) {
-    const {type, name, value} = event.target
+    const {name, value} = event.target
     setQData(prevQData => {
       return {
           ...prevQData,
@@ -40,7 +38,7 @@ function App() {
   }
 
 function calcularQt() {
-  setCargaTt(prevCargaTt => prevCargaTt = (Number(qData.A) * Number(qData.U) * Number(qData.T)))  
+  setCargaTt(prevCargaTt => prevCargaTt = (Number(qData.A) * Number(qData.U) * Number(qData.T)))  s
 }
 
 function calcularQv() {
