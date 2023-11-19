@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function CalculadoraDeQ(props) { 
      
   const Div = {
@@ -27,19 +28,21 @@ const sub = {
 
   const Input = {
     fontFamily: "Goudy Old Style",
-    width: "6rem",
+    width: "5rem",
     height: "2rem",
-    fontSize: "2rem",
+    fontSize: "1.5rem",
     textAlign: "center",
     fontWeight: "bold",
     borderRadius: "0.3rem",
     border: "none",
+
+  
   }
 
     return (
         <div style={Div} >
             <form style={Qt}>
-                <h1>Q<sub style={sub}>{props.placeTwo}</sub></h1>
+                <h1>Q<sub style={sub}>{props.name2}</sub></h1>
                 <h1>=</h1>
                 <input 
                   style={Input} 

@@ -4,6 +4,7 @@ import React from 'react';
 import CalculadoraDeQ from './CalculadoraDeQ';
 import Button from './Button';
 import Resultado from './Resultado';
+import ResetBtn from './ResetBtn';
 
 
 function App() {
@@ -45,7 +46,9 @@ function calcularQv() {
   setCargaTv(prevCargaTv => prevCargaTv = (1.24 * Number(qData.V) * Number(qData.E)))  
 }
 
-   console.log(unidades)
+function reload() {
+  window.location.reload()
+}
 
   return (
     <div className="App">
@@ -89,6 +92,8 @@ function calcularQv() {
         unidades={unidades}
         cambioDeUnidades={cambioDeUnidades}
         />
+
+        <ResetBtn reload={reload} />
     
      </main>
     </div>

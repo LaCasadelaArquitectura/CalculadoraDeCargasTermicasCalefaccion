@@ -17,13 +17,15 @@ export default function Resultado(props) {
         width: "3.3rem",
         borderRadius: "0.3rem",
         border: "none",
-        marginRight: "1rem",
+        marginLeft: "0.5rem",
         fontFamily: "Goudy Old Style",
         fontSize: "2rem",
-        backgroundColor: "rgb(173, 232, 244)",
-        color: "rgb(3, 4, 94)",
+        backgroundColor: "rgb(3, 4, 94)",
+        color: "rgb(202, 240, 248)",
         fontWeight: "bold",
         cursor: "pointer",
+
+        
       }
       
       const block = {
