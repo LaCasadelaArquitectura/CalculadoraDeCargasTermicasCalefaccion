@@ -8,11 +8,7 @@ export default function Button(props){
         alignItems: "center",
         gap: "20px",
         margiBottom: "2rem",
-        paddingLeft: "6.3rem",  
-        backgroundColor: props.subindice === "U" ? 'rgb(0, 150, 199)' : 'rgba(72, 202, 228)',  
-        borderBottomLeftRadius: '2rem', 
-        borderBottomRightRadius: '2rem', 
-        marginBottom: '1rem', 
+        paddingLeft: "4.5rem",  
         color: 'rgb(3, 4, 94)' 
       }
       
@@ -37,7 +33,7 @@ export default function Button(props){
                 <button 
                     style={button} 
                     onClick={props.calcularQ}
-                    >{props.texto}
+                    >Calcular
                     
                     </button>
                 <h1>Q<sub style={{fontSize: "1rem"}}>{props.subindice}</sub></h1>

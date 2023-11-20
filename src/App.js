@@ -1,11 +1,10 @@
 
 import './App.css';
 import React from 'react';
-import CalculadoraDeQ from './CalculadoraDeQ';
-import Button from './Button';
+import CalculadoraDeQu from './CalcDeQu';
 import Resultado from './Resultado';
 import ResetBtn from './ResetBtn';
-
+import CalculadoraDeQv from './CalcDeQv';
 
 function App() {
  
@@ -43,7 +42,7 @@ function calcularQt() {
 }
 
 function calcularQv() {
-  setCargaTv(prevCargaTv => prevCargaTv = (1.24 * Number(qData.V) * Number(qData.E)))  
+  setCargaTv(prevCargaTv => prevCargaTv = (1.24 * Number(qData.V) * Number(qData.E)* 1.163))  
 }
 
 function reload() {
@@ -56,35 +55,26 @@ function reload() {
         <h1 className="title">Calculadora de cargas térmicas</h1>
       </header>
      <main>
-        <CalculadoraDeQ
-          name1={"A"}
-          name2={"U"}
-          name3={"T"}
+        <CalculadoraDeQu
           handleChange={handleChange}
-          />
-
-        <Button
           texto={"Calcular"}
           calcularQ={calcularQt}
           resultado={cargaTt}
-          subindice={"U"}
-          unidades={unidades} />
-
-        <CalculadoraDeQ
-          placeOne={"1.24"}
-          value={1.24}
-          name1={"pesoEspecifico"}
-          name2={"V"}
-          name3={"E"}
-          handleChange={handleChange}
+          unidades={unidades}
           />
 
-        <Button
+        
+
+        <CalculadoraDeQv
+          handleChange={handleChange}
           calcularQ={calcularQv}
           resultado={cargaTv}
           texto={"Calcular"}
           subindice={"V"}
-          unidades={unidades}  />
+          unidades={unidades}
+          />
+
+       
 
         <Resultado
         cargaTt={cargaTt}

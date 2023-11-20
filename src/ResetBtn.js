@@ -13,7 +13,6 @@ const button = {
     color: "rgb(202, 240, 248)",
     fontWeight: "bold",
     cursor: "pointer",
-    marginTop: "1rem",
     alignSelf: "flex-end",
   }   
   
